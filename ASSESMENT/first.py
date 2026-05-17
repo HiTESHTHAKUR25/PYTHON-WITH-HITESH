@@ -51,7 +51,7 @@ while num>0:
 	num1 = num%10
 	sum = sum+num1
 	if thres<=sum:
-		print("\nThreshold Exceeded")
+		print("\nThreshold Exceeded.")
 		sum = sum-num1
 		break
 	
@@ -59,7 +59,7 @@ while num>0:
 	count+=1
 	num = num//10
 else:
-	print("\nThreshold Not Reached")
+	print("\nThreshold Not Reached.")
 	
 
 print("Sum: ",sum)

@@ -450,4 +450,178 @@ for i in range(1,num+1):
     print()
 
 
+s = (input("Enter : "))
+
+if s == s[::-1]:
+     print("pelendrom")
+else:
+     print("not")
+    
+
+# 0   h
+# 1   i
+# 2   t
+# 3   e
+# 4   s
+# 5   h
+
+s = "hitesh"
+
+for i,ch in enumerate(s):
+    print(i," ",ch)
+
+
+str = 'welcomr'
+str = str+"a"
+print(str)
+
+
+str= "welcome"
+print(id(str))
+str = str+ " hitesh"
+print(id(str))
+
+
+
+
+
+
+
+
+a = "hitesh"
+print(a)
+del a
+print(a)
+
+
+
+a = "hitesh"
+b = a+"w"
+print(a)
+del a
+print(b)
+
+
+s = "hitesh thakur "
+
+print(s.lower())
+print(s.upper())
+print(s.capitalize())
+print(s.title())
+print(s.swapcase())
+print(s.find("z"))
+
+
+
+
+s = "hitesh thakur"
+print(s.index("a"))
+print(s.rindex("t"))
+print(s.count("t"))
+print(s.count("t"))
+print(s.isalpha())
+print("hitesh".isalpha())
+print("12345678".isdigit())
+print(s.isdigit())
+print(s.isalnum())
+print("12345gfiue".isalnum())
+print("12345gHiue".islower())
+print(s.islower())
+print(s.isupper())
+print("HITESH ".isupper())
+print(" ".isspace())
+print("".isspace())
+print(s.isspace())
+print(s.istitle())
+print("Hello Hitesh".istitle())
+print(s.replace("hitesh","akshay"))
+print(s.strip())
+print("    hitesh    ".strip())
+print("  hitesh      ".lstrip())
+print("  hitesh      ".rstrip())
+print(s.split())
+l=(s.split())
+print(l[1])
+print("hitesh,thakur,thakur".split())
+print("hitesh,thakur,thakur".split(","))
+l2= ["hitehs","thakur","akshay"]
+print(" ".join(l2))
+
+
+
+
+# password chacker
+
+s = input("Enter Password: ")
+s1 = len(s)
+lower=0
+upper=0
+digit=0
+space=0
+special=0
+count1=0
+if 8 <= s1 <=15:
+    for s2 in s:
+        if s2>= "A" and s2 <="Z":
+            lower=1 
+        elif s2 >="a" and s2<'z':
+            upper=1
+        elif s2 >="0" and s2<="9":
+            digit=1
+        elif s2 == " ":
+            space=1
+        else:
+            special=1
+else:
+    print("Password Length is Not Setisfy our Condition")
+    count1+=1
+
+if count1 != 1:
+    if lower==1 and upper==1 and space!=1 and special==1 and digit==1:
+        print("Valid PassWord")
+    else:
+        print("Invalid PassWord")
+
+        
+# using predifine method
+# while loop
+
+
+
+s = input("Enter Password: ")
+s1 = len(s)
+lower=0
+upper=0
+digit=0
+space=0
+special=0
+count1=0
+if 8 <= s1 <=15:
+    for s2 in s:
+        if s2.islower():
+            lower=1 
+        elif s2.isupper():
+            upper=1
+        elif s2.isdigit():
+            digit=1
+        elif s2.isspace():
+            space=1
+        else:
+            special=1
+else:
+    print("Password Length is Not Setisfy our Condition")
+    count1+=1
+
+if count1 != 1:
+    if lower==1 and upper==1 and space!=1 and special==1 and digit==1:
+        print("Valid PassWord")
+    else:
+        print("Invalid PassWord")
+
+
+# using predifine method
+# while loop
+
+
+
 

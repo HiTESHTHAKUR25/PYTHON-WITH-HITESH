@@ -7,11 +7,11 @@ el = int(input("Existing Loans: "))
 if salary >= 30000 and cs >= 750:
         print("Conditional Approval ")
 else:
-        if el < 2:
-            if salary >= 30000:
-                print("Conditional Approval")
-        else:
-            print("Rejected")
+    if el < 2:
+        if salary >= 30000:
+            print("Conditional Approval")
+    else:
+        print("Rejected")
 
 # ====================2========
 
